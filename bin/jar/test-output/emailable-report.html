@@ -29,13 +29,18 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing=0 cellpadding=0 class="param">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">GET-Eureka3-addressbook</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.5 seconds</td><td class="numi">get </td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">GET-Eureka3-addressbook</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.4 seconds</td><td class="numi">get </td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">GET-Eureka3-addressbook1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0.3 seconds</td><td class="numi">get </td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0.8 seconds</td><td colspan="2">&nbsp;</td></tr>
 </table>
 <a id="summary"></a>
 <table cellspacing=0 cellpadding=0 class="passed">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
 <tr><th colspan="4">GET-Eureka3-addressbook &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">com.bluemeric.test.GenerateTest<td><a href="#m1"><b>getTest</b> (get) </a></td><td class="numi">1</td><td>1477478122181</td><td class="numi">441</td></tr>
+<tr class="passedodd"><td rowspan="1">com.bluemeric.test.GenerateTest<td><a href="#m1"><b>getTest</b> (get) </a></td><td class="numi">1</td><td>1477478832700</td><td class="numi">394</td></tr>
+<tr><th colspan="4">GET-Eureka3-addressbook1 &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.bluemeric.test.GenerateTest<td><a href="#m2"><b>getTest</b> (get) </a></td><td class="numi">1</td><td>1477478833111</td><td class="numi">333</td></tr>
 </table>
 <h1>GET-Eureka3-addressbook</h1>
 <a id="m1"></a><h2>com.bluemeric.test.GenerateTest:getTest</h2>
@@ -109,6 +114,138 @@ vaadin.initApplication("ROOT-2521314",{
 </html><br/>
 
  Both response code and string are matching with expected output. Hence Passed the test.<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>GET-Eureka3-addressbook1</h1>
+<a id="m2"></a><h2>com.bluemeric.test.GenerateTest:getTest</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th><th style="padding-left:1em;padding-right:1em">Parameter #4</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">104.199.158.27:9006</td>
+<td style="padding-left:.5em;padding-right:2em"></td>
+<td style="padding-left:.5em;padding-right:2em">address.txt</td>
+<td style="padding-left:.5em;padding-right:2em">eureka3</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="4">
+<h3>Test Messages</h3>
+
+
+ Get path : http://104.199.158.27:9006/<br/>
+
+ Response code received : 200<br/>
+
+ Response String received : <!DOCTYPE html>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=11;chrome=1">
+  <title>Addressbook</title>
+  <style type="text/css">html, body {height:100%;margin:0;}</style>
+  <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="./VAADIN/themes/valo/favicon.ico">
+  <link rel="icon" type="image/vnd.microsoft.icon" href="./VAADIN/themes/valo/favicon.ico">
+ </head>
+ <body scroll="auto" class=" v-generated-body">
+  <div id="ROOT-2521314" class=" v-app valo addressbookui">
+   <div class=" v-app-loading"></div>
+   <noscript>
+    You have to enable javascript in your browser to use an application built with Vaadin.
+   </noscript>
+  </div>
+  <script type="text/javascript" src="./VAADIN/vaadinBootstrap.js?v=7.4.5"></script>
+  <script type="text/javascript">//<![CDATA[
+if (!window.vaadin) alert("Failed to load the bootstrap javascript: ./VAADIN/vaadinBootstrap.js?v=7.4.5");
+if (typeof window.__gwtStatsEvent != 'function') {
+vaadin.gwtStatsEvents = [];
+window.__gwtStatsEvent = function(event) {vaadin.gwtStatsEvents.push(event); return true;};
+}
+vaadin.initApplication("ROOT-2521314",{
+    "theme": "valo",
+    "versionInfo": {
+        "vaadinVersion": "7.4.5"
+    },
+    "widgetset": "com.vaadin.DefaultWidgetSet",
+    "comErrMsg": {
+        "caption": "Communication problem",
+        "message": "Take note of any unsaved data, and <u>click here</u> or press ESC to continue.",
+        "url": null
+    },
+    "authErrMsg": {
+        "caption": "Authentication problem",
+        "message": "Take note of any unsaved data, and <u>click here</u> or press ESC to continue.",
+        "url": null
+    },
+    "sessExpMsg": {
+        "caption": "Session Expired",
+        "message": "Take note of any unsaved data, and <u>click here</u> or press ESC key to continue.",
+        "url": null
+    },
+    "vaadinDir": "./VAADIN/",
+    "debug": true,
+    "standalone": true,
+    "heartbeatInterval": 300,
+    "serviceUrl": "/vaadinServlet"
+});
+//]]></script>
+ </body>
+</html><br/>
+<h3>Failure</h3>
+<p>Expected response is First Name. But received reponse = &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+ &lt;head&gt;
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=11;chrome=1&quot;&gt;
+  &lt;title&gt;Addressbook&lt;/title&gt;
+  &lt;style type=&quot;text/css&quot;&gt;html, body {height:100%;margin:0;}&lt;/style&gt;
+  &lt;link rel=&quot;shortcut icon&quot; type=&quot;image/vnd.microsoft.icon&quot; href=&quot;./VAADIN/themes/valo/favicon.ico&quot;&gt;
+  &lt;link rel=&quot;icon&quot; type=&quot;image/vnd.microsoft.icon&quot; href=&quot;./VAADIN/themes/valo/favicon.ico&quot;&gt;
+ &lt;/head&gt;
+ &lt;body scroll=&quot;auto&quot; class=&quot; v-generated-body&quot;&gt;
+  &lt;div id=&quot;ROOT-2521314&quot; class=&quot; v-app valo addressbookui&quot;&gt;
+   &lt;div class=&quot; v-app-loading&quot;&gt;&lt;/div&gt;
+   &lt;noscript&gt;
+    You have to enable javascript in your browser to use an application built with Vaadin.
+   &lt;/noscript&gt;
+  &lt;/div&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;./VAADIN/vaadinBootstrap.js?v=7.4.5&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;//&lt;![CDATA[
+if (!window.vaadin) alert(&quot;Failed to load the bootstrap javascript: ./VAADIN/vaadinBootstrap.js?v=7.4.5&quot;);
+if (typeof window.__gwtStatsEvent != &apos;function&apos;) {
+vaadin.gwtStatsEvents = [];
+window.__gwtStatsEvent = function(event) {vaadin.gwtStatsEvents.push(event); return true;};
+}
+vaadin.initApplication(&quot;ROOT-2521314&quot;,{
+    &quot;theme&quot;: &quot;valo&quot;,
+    &quot;versionInfo&quot;: {
+        &quot;vaadinVersion&quot;: &quot;7.4.5&quot;
+    },
+    &quot;widgetset&quot;: &quot;com.vaadin.DefaultWidgetSet&quot;,
+    &quot;comErrMsg&quot;: {
+        &quot;caption&quot;: &quot;Communication problem&quot;,
+        &quot;message&quot;: &quot;Take note of any unsaved data, and &lt;u&gt;click here&lt;/u&gt; or press ESC to continue.&quot;,
+        &quot;url&quot;: null
+    },
+    &quot;authErrMsg&quot;: {
+        &quot;caption&quot;: &quot;Authentication problem&quot;,
+        &quot;message&quot;: &quot;Take note of any unsaved data, and &lt;u&gt;click here&lt;/u&gt; or press ESC to continue.&quot;,
+        &quot;url&quot;: null
+    },
+    &quot;sessExpMsg&quot;: {
+        &quot;caption&quot;: &quot;Session Expired&quot;,
+        &quot;message&quot;: &quot;Take note of any unsaved data, and &lt;u&gt;click here&lt;/u&gt; or press ESC key to continue.&quot;,
+        &quot;url&quot;: null
+    },
+    &quot;vaadinDir&quot;: &quot;./VAADIN/&quot;,
+    &quot;debug&quot;: true,
+    &quot;standalone&quot;: true,
+    &quot;heartbeatInterval&quot;: 300,
+    &quot;serviceUrl&quot;: &quot;/vaadinServlet&quot;
+});
+//]]&gt;&lt;/script&gt;
+ &lt;/body&gt;
+&lt;/html&gt;. Output mismatching. Hence failing the test.</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at com.bluemeric.test.GenerateTest.getTest(Unknown Source)
+<br/>24 lines not shown
 </td></tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>

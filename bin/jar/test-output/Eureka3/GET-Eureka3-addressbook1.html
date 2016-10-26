@@ -1,0 +1,287 @@
+<html>
+<head>
+<title>TestNG:  GET-Eureka3-addressbook1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>GET-Eureka3-addressbook1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Oct 26 10:47:13 UTC 2016</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (336 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>get </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.bluemeric.test.GenerateTest.getTest()'><b>getTest</b><br>Test class: com.bluemeric.test.GenerateTest<br>Parameters: 104.199.158.27:9006, , address.txt, eureka3<br/>
+<a href="#Output-1208736537" onClick='toggleBox("Output-1208736537", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1208736537" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1208736537">
+
+
+ Get path : http://104.199.158.27:9006/<br/>
+
+ Response code received : 200<br/>
+
+ Response String received : <!DOCTYPE html>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=11;chrome=1">
+  <title>Addressbook</title>
+  <style type="text/css">html, body {height:100%;margin:0;}</style>
+  <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="./VAADIN/themes/valo/favicon.ico">
+  <link rel="icon" type="image/vnd.microsoft.icon" href="./VAADIN/themes/valo/favicon.ico">
+ </head>
+ <body scroll="auto" class=" v-generated-body">
+  <div id="ROOT-2521314" class=" v-app valo addressbookui">
+   <div class=" v-app-loading"></div>
+   <noscript>
+    You have to enable javascript in your browser to use an application built with Vaadin.
+   </noscript>
+  </div>
+  <script type="text/javascript" src="./VAADIN/vaadinBootstrap.js?v=7.4.5"></script>
+  <script type="text/javascript">//<![CDATA[
+if (!window.vaadin) alert("Failed to load the bootstrap javascript: ./VAADIN/vaadinBootstrap.js?v=7.4.5");
+if (typeof window.__gwtStatsEvent != 'function') {
+vaadin.gwtStatsEvents = [];
+window.__gwtStatsEvent = function(event) {vaadin.gwtStatsEvents.push(event); return true;};
+}
+vaadin.initApplication("ROOT-2521314",{
+    "theme": "valo",
+    "versionInfo": {
+        "vaadinVersion": "7.4.5"
+    },
+    "widgetset": "com.vaadin.DefaultWidgetSet",
+    "comErrMsg": {
+        "caption": "Communication problem",
+        "message": "Take note of any unsaved data, and <u>click here</u> or press ESC to continue.",
+        "url": null
+    },
+    "authErrMsg": {
+        "caption": "Authentication problem",
+        "message": "Take note of any unsaved data, and <u>click here</u> or press ESC to continue.",
+        "url": null
+    },
+    "sessExpMsg": {
+        "caption": "Session Expired",
+        "message": "Take note of any unsaved data, and <u>click here</u> or press ESC key to continue.",
+        "url": null
+    },
+    "vaadinDir": "./VAADIN/",
+    "debug": true,
+    "standalone": true,
+    "heartbeatInterval": 300,
+    "serviceUrl": "/vaadinServlet"
+});
+//]]></script>
+ </body>
+</html><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Expected response is First Name. But received reponse = &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+ &lt;head&gt;
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=11;chrome=1&quot;&gt;
+  &lt;title&gt;Addressbook&lt;/title&gt;
+  &lt;style type=&quot;text/css&quot;&gt;html, body {height:100%;margin:0;}&lt;/style&gt;
+  &lt;link rel=&quot;shortcut icon&quot; type=&quot;image/vnd.microsoft.icon&quot; href=&quot;./VAADIN/themes/valo/favicon.ico&quot;&gt;
+  &lt;link rel=&quot;icon&quot; type=&quot;image/vnd.microsoft.icon&quot; href=&quot;./VAADIN/themes/valo/favicon.ico&quot;&gt;
+ &lt;/head&gt;
+ &lt;body scroll=&quot;auto&quot; class=&quot; v-generated-body&quot;&gt;
+  &lt;div id=&quot;ROOT-2521314&quot; class=&quot; v-app valo addressbookui&quot;&gt;
+   &lt;div class=&quot; v-app-loading&quot;&gt;&lt;/div&gt;
+   &lt;noscript&gt;
+    You have to enable javascript in your browser to use an application built with Vaadin.
+   &lt;/noscript&gt;
+  &lt;/div&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;./VAADIN/vaadinBootstrap.js?v=7.4.5&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;//&lt;![CDATA[
+if (!window.vaadin) alert(&quot;Failed to load the bootstrap javascript: ./VAADIN/vaadinBootstrap.js?v=7.4.5&quot;);
+if (typeof window.__gwtStatsEvent != &apos;function&apos;) {
+vaadin.gwtStatsEvents = [];
+window.__gwtStatsEvent = function(event) {vaadin.gwtStatsEvents.push(event); return true;};
+}
+vaadin.initApplication(&quot;ROOT-2521314&quot;,{
+    &quot;theme&quot;: &quot;valo&quot;,
+    &quot;versionInfo&quot;: {
+        &quot;vaadinVersion&quot;: &quot;7.4.5&quot;
+    },
+    &quot;widgetset&quot;: &quot;com.vaadin.DefaultWidgetSet&quot;,
+    &quot;comErrMsg&quot;: {
+        &quot;caption&quot;: &quot;Communication problem&quot;,
+        &quot;message&quot;: &quot;Take note of any unsaved data, and &lt;u&gt;click here&lt;/u&gt; or press ESC to continue.&quot;,
+        &quot;url&quot;: null
+    },
+    &quot;authErrMsg&quot;: {
+        &quot;caption&quot;: &quot;Authentication problem&quot;,
+        &quot;message&quot;: &quot;Take note of any unsaved data, and &lt;u&gt;click here&lt;/u&gt; or press ESC to continue.&quot;,
+        &quot;url&quot;: null
+    },
+    &quot;sessExpMsg&quot;: {
+        &quot;caption&quot;: &quot;Session Expired&quot;,
+        &quot;message&quot;: &quot;Take note of any unsaved data, and &lt;u&gt;click here&lt;/u&gt; or press ESC key to continue.&quot;,
+        &quot;url&quot;: null
+    },
+    &quot;vaadinDir&quot;: &quot;./VAADIN/&quot;,
+    &quot;debug&quot;: true,
+    &quot;standalone&quot;: true,
+    &quot;heartbeatInterval&quot;: 300,
+    &quot;serviceUrl&quot;: &quot;/vaadinServlet&quot;
+});
+//]]&gt;&lt;/script&gt;
+ &lt;/body&gt;
+&lt;/html&gt;. Output mismatching. Hence failing the test.
+	at com.bluemeric.test.GenerateTest.getTest(Unknown Source)
+	at com.bluemeric.test.RunTest.runTests(Unknown Source)
+	at com.bluemeric.test.RunTest.main(Unknown Source)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1208736537", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1208736537'><pre>java.lang.AssertionError: Expected response is First Name. But received reponse = &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+ &lt;head&gt;
+  &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
+  &lt;meta http-equiv="X-UA-Compatible" content="IE=11;chrome=1"&gt;
+  &lt;title&gt;Addressbook&lt;/title&gt;
+  &lt;style type="text/css"&gt;html, body {height:100%;margin:0;}&lt;/style&gt;
+  &lt;link rel="shortcut icon" type="image/vnd.microsoft.icon" href="./VAADIN/themes/valo/favicon.ico"&gt;
+  &lt;link rel="icon" type="image/vnd.microsoft.icon" href="./VAADIN/themes/valo/favicon.ico"&gt;
+ &lt;/head&gt;
+ &lt;body scroll="auto" class=" v-generated-body"&gt;
+  &lt;div id="ROOT-2521314" class=" v-app valo addressbookui"&gt;
+   &lt;div class=" v-app-loading"&gt;&lt;/div&gt;
+   &lt;noscript&gt;
+    You have to enable javascript in your browser to use an application built with Vaadin.
+   &lt;/noscript&gt;
+  &lt;/div&gt;
+  &lt;script type="text/javascript" src="./VAADIN/vaadinBootstrap.js?v=7.4.5"&gt;&lt;/script&gt;
+  &lt;script type="text/javascript"&gt;//&lt;![CDATA[
+if (!window.vaadin) alert("Failed to load the bootstrap javascript: ./VAADIN/vaadinBootstrap.js?v=7.4.5");
+if (typeof window.__gwtStatsEvent != 'function') {
+vaadin.gwtStatsEvents = [];
+window.__gwtStatsEvent = function(event) {vaadin.gwtStatsEvents.push(event); return true;};
+}
+vaadin.initApplication("ROOT-2521314",{
+    "theme": "valo",
+    "versionInfo": {
+        "vaadinVersion": "7.4.5"
+    },
+    "widgetset": "com.vaadin.DefaultWidgetSet",
+    "comErrMsg": {
+        "caption": "Communication problem",
+        "message": "Take note of any unsaved data, and &lt;u&gt;click here&lt;/u&gt; or press ESC to continue.",
+        "url": null
+    },
+    "authErrMsg": {
+        "caption": "Authentication problem",
+        "message": "Take note of any unsaved data, and &lt;u&gt;click here&lt;/u&gt; or press ESC to continue.",
+        "url": null
+    },
+    "sessExpMsg": {
+        "caption": "Session Expired",
+        "message": "Take note of any unsaved data, and &lt;u&gt;click here&lt;/u&gt; or press ESC key to continue.",
+        "url": null
+    },
+    "vaadinDir": "./VAADIN/",
+    "debug": true,
+    "standalone": true,
+    "heartbeatInterval": 300,
+    "serviceUrl": "/vaadinServlet"
+});
+//]]&gt;&lt;/script&gt;
+ &lt;/body&gt;
+&lt;/html&gt;. Output mismatching. Hence failing the test.
+	at org.testng.Assert.fail(Assert.java:89)
+	at com.bluemeric.test.GenerateTest.getTest(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:768)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1113)
+	at org.testng.TestNG.run(TestNG.java:1025)
+	at com.bluemeric.test.RunTest.runTests(Unknown Source)
+	at com.bluemeric.test.RunTest.main(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.bluemeric.test.GenerateTest@3159c4b8</td></tr>
+</table><p>
+</body>
+</html>
