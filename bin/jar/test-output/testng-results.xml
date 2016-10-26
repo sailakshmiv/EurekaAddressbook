@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[
+
+ Get path : http://104.199.158.27:9006/]]>
+    </line>
+    <line>
+      <![CDATA[
+ Response code received : 200]]>
+    </line>
+    <line>
+      <![CDATA[
+ Response String received : <!DOCTYPE html>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=11;chrome=1">
+  <title>Addressbook</title>
+  <style type="text/css">html, body {height:100%;margin:0;}</style>
+  <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="./VAADIN/themes/valo/favicon.ico">
+  <link rel="icon" type="image/vnd.microsoft.icon" href="./VAADIN/themes/valo/favicon.ico">
+ </head>
+ <body scroll="auto" class=" v-generated-body">
+  <div id="ROOT-2521314" class=" v-app valo addressbookui">
+   <div class=" v-app-loading"></div>
+   <noscript>
+    You have to enable javascript in your browser to use an application built with Vaadin.
+   </noscript>
+  </div>
+  <script type="text/javascript" src="./VAADIN/vaadinBootstrap.js?v=7.4.5"></script>
+  <script type="text/javascript">//<![CDATA[
+if (!window.vaadin) alert("Failed to load the bootstrap javascript: ./VAADIN/vaadinBootstrap.js?v=7.4.5");
+if (typeof window.__gwtStatsEvent != 'function') {
+vaadin.gwtStatsEvents = [];
+window.__gwtStatsEvent = function(event) {vaadin.gwtStatsEvents.push(event); return true;};
+}
+vaadin.initApplication("ROOT-2521314",{
+    "theme": "valo",
+    "versionInfo": {
+        "vaadinVersion": "7.4.5"
+    },
+    "widgetset": "com.vaadin.DefaultWidgetSet",
+    "comErrMsg": {
+        "caption": "Communication problem",
+        "message": "Take note of any unsaved data, and <u>click here</u> or press ESC to continue.",
+        "url": null
+    },
+    "authErrMsg": {
+        "caption": "Authentication problem",
+        "message": "Take note of any unsaved data, and <u>click here</u> or press ESC to continue.",
+        "url": null
+    },
+    "sessExpMsg": {
+        "caption": "Session Expired",
+        "message": "Take note of any unsaved data, and <u>click here</u> or press ESC key to continue.",
+        "url": null
+    },
+    "vaadinDir": "./VAADIN/",
+    "debug": true,
+    "standalone": true,
+    "heartbeatInterval": 300,
+    "serviceUrl": "/vaadinServlet"
+});
+//]]]]><![CDATA[></script>
+ </body>
+</html>]]>
+    </line>
+    <line>
+      <![CDATA[
+ Both response code and string are matching with expected output. Hence Passed the test.]]>
+    </line>
+  </reporter-output>
+  <suite name="Eureka3" duration-ms="463" started-at="2016-10-26T10:35:22Z" finished-at="2016-10-26T10:35:22Z">
+    <groups>
+      <group name="get">
+        <method signature="GenerateTest.getTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bluemeric.test.GenerateTest@47f6473]" name="getTest" class="com.bluemeric.test.GenerateTest"/>
+      </group> <!-- get -->
+    </groups>
+    <test name="GET-Eureka3-addressbook" duration-ms="463" started-at="2016-10-26T10:35:22Z" finished-at="2016-10-26T10:35:22Z">
+      <class name="com.bluemeric.test.GenerateTest">
+        <test-method status="PASS" signature="getTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bluemeric.test.GenerateTest@47f6473]" name="getTest" duration-ms="441" started-at="2016-10-26T10:35:22Z" finished-at="2016-10-26T10:35:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[104.199.158.27:9006]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[addressbook.txt]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[eureka3]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- getTest -->
+      </class> <!-- com.bluemeric.test.GenerateTest -->
+    </test> <!-- GET-Eureka3-addressbook -->
+  </suite> <!-- Eureka3 -->
+</testng-results>

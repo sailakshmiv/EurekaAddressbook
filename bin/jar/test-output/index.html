@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG new reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Eureka3">
+              <span class="suite-name border-passed">Eureka3</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Eureka3">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Eureka3">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Eureka3">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Eureka3">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Eureka3">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Eureka3">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Eureka3">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Eureka3" class="hide-methods passed suite-Eureka3"> (hide)</a> <!-- hide-methods passed suite-Eureka3 -->
+                      <a href="#" panel-name="suite-Eureka3" class="show-methods passed suite-Eureka3"> (show)</a> <!-- show-methods passed suite-Eureka3 -->
+                    </span>
+                    <div class="method-list-content passed suite-Eureka3">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Eureka3" title="com.bluemeric.test.GenerateTest" hash-for-method="getTest(104.199.158.27:9006, , addressbook.txt, eureka3)">getTest(104.199.158.27:9006, , addressbook.txt, eureka3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Eureka3 -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Eureka3" class="panel Eureka3">
+          <div class="suite-Eureka3-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.bluemeric.test.GenerateTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTest(104.199.158.27:9006, , addressbook.txt, eureka3)">
+                  </a> <!-- getTest(104.199.158.27:9006, , addressbook.txt, eureka3) -->
+                  <span class="method-name">getTest</span>
+                  <span class="parameters">(104.199.158.27:9006, , addressbook.txt, eureka3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Eureka3-class-passed -->
+        </div> <!-- panel Eureka3 -->
+        <div panel-name="test-xml-Eureka3" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Eureka3&quot;&gt;
+  &lt;test name=&quot;GET-Eureka3-addressbook&quot; preserve-order=&quot;true&quot;&gt;
+    &lt;parameter name=&quot;outputFile&quot; value=&quot;addressbook.txt&quot;/&gt;
+    &lt;parameter name=&quot;endpoint&quot; value=&quot;104.199.158.27:9006&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;&quot;/&gt;
+    &lt;parameter name=&quot;suiteName&quot; value=&quot;eureka3&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;get&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.bluemeric.test.GenerateTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- GET-Eureka3-addressbook --&gt;
+&lt;/suite&gt; &lt;!-- Eureka3 --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Eureka3" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Eureka3</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">GET-Eureka3-addressbook (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Eureka3" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Eureka3</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">get</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">getTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Eureka3" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Eureka3</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Eureka3');
+function tableData_Eureka3() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'getTest')
+data.setCell(0, 2, 'com.bluemeric.test.GenerateTest')
+data.setCell(0, 3, 441);
+window.suiteTableData['Eureka3']= { tableData: data, tableDiv: 'times-div-Eureka3'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 441 ms</span>
+              <div id="times-div-Eureka3">
+              </div> <!-- times-div-Eureka3 -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Eureka3" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Eureka3</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">getTest(104.199.158.27:9006, , addressbook.txt, eureka3)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">
+
+ Get path : http://104.199.158.27:9006/</span>
+                <span class="reporter-method-output">
+ Response code received : 200</span>
+                <span class="reporter-method-output">
+ Response String received : <!DOCTYPE html>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=11;chrome=1">
+  <title>Addressbook</title>
+  <style type="text/css">html, body {height:100%;margin:0;}</style>
+  <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="./VAADIN/themes/valo/favicon.ico">
+  <link rel="icon" type="image/vnd.microsoft.icon" href="./VAADIN/themes/valo/favicon.ico">
+ </head>
+ <body scroll="auto" class=" v-generated-body">
+  <div id="ROOT-2521314" class=" v-app valo addressbookui">
+   <div class=" v-app-loading"></div>
+   <noscript>
+    You have to enable javascript in your browser to use an application built with Vaadin.
+   </noscript>
+  </div>
+  <script type="text/javascript" src="./VAADIN/vaadinBootstrap.js?v=7.4.5"></script>
+  <script type="text/javascript">//<![CDATA[
+if (!window.vaadin) alert("Failed to load the bootstrap javascript: ./VAADIN/vaadinBootstrap.js?v=7.4.5");
+if (typeof window.__gwtStatsEvent != 'function') {
+vaadin.gwtStatsEvents = [];
+window.__gwtStatsEvent = function(event) {vaadin.gwtStatsEvents.push(event); return true;};
+}
+vaadin.initApplication("ROOT-2521314",{
+    "theme": "valo",
+    "versionInfo": {
+        "vaadinVersion": "7.4.5"
+    },
+    "widgetset": "com.vaadin.DefaultWidgetSet",
+    "comErrMsg": {
+        "caption": "Communication problem",
+        "message": "Take note of any unsaved data, and <u>click here</u> or press ESC to continue.",
+        "url": null
+    },
+    "authErrMsg": {
+        "caption": "Authentication problem",
+        "message": "Take note of any unsaved data, and <u>click here</u> or press ESC to continue.",
+        "url": null
+    },
+    "sessExpMsg": {
+        "caption": "Session Expired",
+        "message": "Take note of any unsaved data, and <u>click here</u> or press ESC key to continue.",
+        "url": null
+    },
+    "vaadinDir": "./VAADIN/",
+    "debug": true,
+    "standalone": true,
+    "heartbeatInterval": 300,
+    "serviceUrl": "/vaadinServlet"
+});
+//]]></script>
+ </body>
+</html></span>
+                <span class="reporter-method-output">
+ Both response code and string are matching with expected output. Hence Passed the test.</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Eureka3" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Eureka3" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.bluemeric.test.GenerateTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getTest(104.199.158.27:9006, , addressbook.txt, eureka3)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
